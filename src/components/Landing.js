@@ -24,9 +24,8 @@ const Landing = (props) => {
 
 	return (
 		<div className="restaurant_select">
-			<div className="restaurant_select_top">
+			<div className="restaurant_select_top" onClick={displayList}>
 				<div
-					onClick={displayList}
 					className="restaurant_select_top-header font-effect-outline"
 				>
 					{title ? title : "Выбери ресторан"}

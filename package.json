@@ -17,12 +17,13 @@
   "scripts": {
     "dev": "react-scripts --openssl-legacy-provider start",
     "start": "react-scripts --openssl-legacy-provider build",
-    "now-build": "react-scripts build",
-    "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "now-build": "react-scripts --openssl-legacy-provider build",
+    "prebuild": "npm run styles",
     "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
-    "styles:watch": "npm run styles -- -w"
+    "styles:watch": "npm run styles -- -w",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
