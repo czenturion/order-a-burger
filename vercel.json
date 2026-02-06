@@ -4,8 +4,7 @@
     "devCommand": "npm run dev",
     "installCommand": "npm install",
     "framework": "create-react-app",
-    "nodeVersion": "20.x",
-    "env": {
-        "NODE_OPTIONS": "--openssl-legacy-provider"
-    }
+    "regions": [
+        "fra1"
+    ]
 }
