@@ -17,6 +17,10 @@
   "engines": {
     "node": ">=20.0.0"
   },
+  "resolutions": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  },
   "scripts": {
     "dev": "react-scripts --openssl-legacy-provider start",
     "start": "react-scripts --openssl-legacy-provider build",
